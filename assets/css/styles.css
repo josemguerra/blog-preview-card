@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --yellow: rgb(244, 208, 78);
+  --white: rgb(255, 255, 255);
+  --gray-500: rgb(107, 107, 107);
+  --gray-950: rgb(18, 18, 18);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Figtree", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  background-color: var(--yellow);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--white);
+  width: 327px;
+  height: 501px;
+  padding: 16px;
+  border: 1px solid var(--gray-950);
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.9);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 16px;
+}
+
+.card__preview-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card__preview-category {
+  width: 80px;
+  padding: 3px 12px;
+  border-radius: 4px;
+  color: var(--gray-950);
+  font-weight: 800;
+  font-size: 14px;
+  background-color: var(--yellow);
+  border: none;
+}
+
+.card__preview-category:hover {
+  cursor: pointer;
+  background-color: var(--gray-950);
+  color: var(--yellow);
+}
+
+.card__preview-date {
+  font-size: 12px;
+}
+.card__preview-header {
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.card__preview-header:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+.card__description {
+  color: var(--gray-500);
+  font-size: 14px;
+  margin-top: 16px;
+  letter-spacing: 0.2px;
+}
+
+.card__footer > figure {
+  display: flex;
+  gap: 10px;
+}
+
+img.card__avatar {
+  width: 30px;
+}
+
+.card__footer .author {
+  font-weight: 800;
+  align-self: center;
+  font-size: 12px;
+}
+
+.card__footer:hover,
+.card__footer .author:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+img.card__avatar:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
